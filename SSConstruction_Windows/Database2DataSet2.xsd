@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Database2DataSet2" targetNamespace="http://tempuri.org/Database2DataSet2.xsd" xmlns:mstns="http://tempuri.org/Database2DataSet2.xsd" xmlns="http://tempuri.org/Database2DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SSConstruction_Windows.Properties.Settings.GlobalReference.Default.Database2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ROOMTableAdapter" GeneratorDataComponentClassName="ROOMTableAdapter" Name="ROOM" UserDataComponentName="ROOMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database2ConnectionString (Settings)" DbObjectName="dbo.ROOM" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Bed_Room, Bath_Room, Balcony, Room_Area, Room_Price FROM dbo.ROOM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Bed_Room" DataSetColumn="Bed_Room" />
+              <Mapping SourceColumn="Bath_Room" DataSetColumn="Bath_Room" />
+              <Mapping SourceColumn="Balcony" DataSetColumn="Balcony" />
+              <Mapping SourceColumn="Room_Area" DataSetColumn="Room_Area" />
+              <Mapping SourceColumn="Room_Price" DataSetColumn="Room_Price" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Database2DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database2DataSet2" msprop:Generator_UserDSName="Database2DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ROOM" msprop:Generator_TableClassName="ROOMDataTable" msprop:Generator_TableVarName="tableROOM" msprop:Generator_TablePropName="ROOM" msprop:Generator_RowDeletingName="ROOMRowDeleting" msprop:Generator_RowChangingName="ROOMRowChanging" msprop:Generator_RowEvHandlerName="ROOMRowChangeEventHandler" msprop:Generator_RowDeletedName="ROOMRowDeleted" msprop:Generator_UserTableName="ROOM" msprop:Generator_RowChangedName="ROOMRowChanged" msprop:Generator_RowEvArgName="ROOMRowChangeEvent" msprop:Generator_RowClassName="ROOMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Bed_Room" msprop:Generator_ColumnVarNameInTable="columnBed_Room" msprop:Generator_ColumnPropNameInRow="Bed_Room" msprop:Generator_ColumnPropNameInTable="Bed_RoomColumn" msprop:Generator_UserColumnName="Bed_Room" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bath_Room" msprop:Generator_ColumnVarNameInTable="columnBath_Room" msprop:Generator_ColumnPropNameInRow="Bath_Room" msprop:Generator_ColumnPropNameInTable="Bath_RoomColumn" msprop:Generator_UserColumnName="Bath_Room" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Balcony" msprop:Generator_ColumnVarNameInTable="columnBalcony" msprop:Generator_ColumnPropNameInRow="Balcony" msprop:Generator_ColumnPropNameInTable="BalconyColumn" msprop:Generator_UserColumnName="Balcony" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Room_Area" msprop:Generator_ColumnVarNameInTable="columnRoom_Area" msprop:Generator_ColumnPropNameInRow="Room_Area" msprop:Generator_ColumnPropNameInTable="Room_AreaColumn" msprop:Generator_UserColumnName="Room_Area" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Room_Price" msprop:Generator_ColumnVarNameInTable="columnRoom_Price" msprop:Generator_ColumnPropNameInRow="Room_Price" msprop:Generator_ColumnPropNameInTable="Room_PriceColumn" msprop:Generator_UserColumnName="Room_Price" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
